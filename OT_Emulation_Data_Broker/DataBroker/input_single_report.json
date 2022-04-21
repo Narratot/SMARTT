@@ -1,0 +1,21 @@
+{
+    "Simulator": [
+        {
+            "executableName": "Simulink"
+        }
+    ],
+    "Endpoints": [
+        {
+            "Node": "Detector",
+            "IP_Host": "192.168.2.150",
+            "IP_PLC": "127.0.0.1",
+            "SensorNames":"AF_LetdownFlow,2048,AF_LetdownValvePos,2048,AF_MakeupFlow,2048,AF_MakeupValvePos,2048,CC_PumpFlow,2048,CC_PumpInletTemp,2048,CC_PumpOutletTemp,2048,CC_PumpSpeed,2048,CC_PumpTemp,2048,CD_CondTemp,2048,CD_InSteamFlow,2048,CD_Level,2048,CD_OutCondFlow,2048,CD_Press,2048,CD_SteamTemp,2048,CE_Pump1DiffPress,2048,CE_Pump1Flow,2048,CE_Pump1Speed,2048,CE_Pump1Temp,2048,CE_Pump2DiffPress,2048,CE_Pump2Flow,2048,CE_Pump2Speed,2048,CE_Pump2Temp,2048,CE_Pump3DiffPress,2048,CE_Pump3Flow,2048,CE_Pump3Speed,2048,CE_Pump3Temp,2048,CR_Position,2048,FW_Pump1DiffPress,2048,FW_Pump1Flow,2048,FW_Pump1Speed,2048,FW_Pump1Temp,2048,FW_Pump2DiffPress,2048,FW_Pump2Flow,2048,FW_Pump2Speed,2048,FW_Pump2Temp,2048,FW_Pump3DiffPress,2048,FW_Pump3Flow,2048,FW_Pump3Speed,2048,FW_Pump3Temp,2048,FW_TankLevel,2048,FW_TankPress,2048,GN_GenElecPow,2048,GN_GenFreq,2048,GN_GridFreq,2048,INT_SimulationTime,2048,PZ_Level,2048,PZ_Press,2048,PZ_Temp,2048,RC1_PumpDiffPress,2048,RC1_PumpFlow,2048,RC1_PumpSpeed,2048,RC1_PumpTemp,2048,RC2_PumpDiffPress,2048,RC2_PumpFlow,2048,RC2_PumpSpeed,2048,RC2_PumpTemp,2048,RX_CL1Flow,2048,RX_CL1Press,2048,RX_CL2Flow,2048,RX_CL2Press,2048,RX_CladTemp,2048,RX_FuelTemp,2048,RX_InCoolTemp,2048,RX_MeanCoolTemp,2048,RX_OutCoolTemp,2048,RX_ReactorPower,2048,RX_ReactorPress,2048,RX_TotalReac,2048,SD_CtrlValvePos,2048,SG1_InletTemp,2048,SG1_InletWaterFlow,2048,SG1_InletWaterTemp,2048,SG1_Level,2048,SG1_OutletSteamFlow,2048,SG1_OutletSteamTemp,2048,SG1_OutletTemp,2048,SG1_Press,2048,SG1_SteamTemp,2048,SG1_WaterTemp,2048,SG2_InletTemp,2048,SG2_InletWaterFlow,2048,SG2_InletWaterTemp,2048,SG2_Level,2048,SG2_OutletSteamFlow,2048,SG2_OutletSteamTemp,2048,SG2_OutletTemp,2048,SG2_Press,2048,SG2_SteamTemp,2048,SG2_WaterTemp,2048,TB_InSteamFlow,2048,TB_InSteamPress,2048,TB_OutSteamPress,2048,TB_Speed,2048,TB_SpeedCtrlValvePos,2048,AF_MakeupPumpOnOff,2048,CC_PumpOnOff,2048,CE_Pump1OnOff,2048,CE_Pump2OnOff,2048,CE_Pump3OnOff,2048,CR_SCRAM,2048,FW_Pump1OnOff,2048,FW_Pump2OnOff,2048,FW_Pump3OnOff,2048,GN_GenBreak,2048,SD_SafetyValvePos,2048,TB_IsoValvePos",
+            "ActuatorNames": "CE_Pump1SpeedCmd,2056",
+            "ScanTime": "0.1",
+            "TimeMem": "2048",
+            "MemFormat": "32_float",
+            "Endianess":"big,big",
+            "Port":"502"
+        }
+    ]
+}

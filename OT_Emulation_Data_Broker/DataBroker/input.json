@@ -1,22 +1,22 @@
 {
     "Simulator": [
         {
-            "executableName": "ans_runtime_15mar21"
+            "executableName": "Simulink"
         }
     ],
     "Endpoints": [
         {
             "Node": "SGP_RCP_SGL_Controller",
-            "IP_Host": "192.168.1.4",
-            "IP_PLC": "127.0.0.1,192.168.1.22,192.168.1.23",
-            "SensorNames": "SG1_Press,2052,SG2_Press,2054,RX_ReactorPower,2056,RC1_PumpFlow,2052,SG1_Level,2052,SG2_Level,2054,RX_ReactorPower,2056",
-            "ActuatorNames": "TB_IsoValveCmd,2058,RC1_PumpSpeedCmd,2054,FW_Pump1SpeedCmd,2058,FW_Pump2SpeedCmd,2060,FW_Pump3SpeedCmd,2062,FW_Pump1OnOffCmd,2064,FW_Pump2OnOffCmd,2066,FW_Pump3OnOffCmd,2068",
-            "ScanTime": "0.1,0.1,0.1",
-            "TimeMem": "2048,2048,2048",
-            "MemFormat": "32_float,32_float,32_float",
-            "Endianess":"big,big,big,big,big,big",
-            "Port":"502,502,502",
-            "MultiPLC": "s=3,1,3;a=1,1,6"
+            "IP_Host": "192.168.2.169",
+            "IP_PLC": "192.168.2.169,192.168.2.170,192.168.2.171,192.168.2.172,192.168.2.173,192.168.2.174",
+            "SensorNames": "CD_Level,2052,RX_ReactorPower,2054,CD_Press,2052,RC1_PumpFlow,2052,SG1_Press,2052,SG2_Press,2054,SG1_Level,2052,SG2_Level,2054,RX_ReactorPower,2056,SG1_Press,2052,SG2_Press,2054,RX_ReactorPower,2056",
+            "ActuatorNames": "CE_Pump1SpeedCmd,2056,CE_Pump2SpeedCmd,2058,CE_Pump3SpeedCmd,2060,CE_Pump1OnOffCmd,2062,CE_Pump2OnOffCmd,2064,CE_Pump3OnOffCmd,2066,CC_PumpSpeedCmd,2054,CC_PumpOnOffCmd,2056,RC1_PumpSpeedCmd,2054,SD_CtrlValveCmd,2056,SD_SafetyValveOnOffCmd,2058,FW_Pump1SpeedCmd,2058,FW_Pump2SpeedCmd,2060,FW_Pump3SpeedCmd,2062,FW_Pump1OnOffCmd,2064,FW_Pump2OnOffCmd,2066,FW_Pump3OnOffCmd,2068,TB_IsoValveCmd,2058",
+            "ScanTime": "0.1,0.1,0.1,0.1,0.1,0.1",
+            "TimeMem": "2048,2048,2048,2048,2048,2048,2048",
+            "MemFormat": "32_float,32_float,32_float,32_float,32_float,32_float",
+            "Endianess":"big,big,big,big,big,big,big,big,big,big,big,big",
+            "Port":"502,502,502,502,502,502,",
+            "MultiPLC": "s=2,1,1,2,3,3;a=6,2,1,2,6,1"
         }
     ]
 }

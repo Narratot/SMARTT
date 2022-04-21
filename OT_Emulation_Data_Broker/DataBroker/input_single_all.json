@@ -1,0 +1,35 @@
+{
+    "Simulator": [
+        {
+            "executableName": "ans_simdiag_04mar19_Rev1_OPCCopy"
+        }
+    ],
+    "Endpoints": [
+        {
+            "Node": "SGP_RCP_SGL_Controller",
+            "IP_Host": "192.168.2.150",
+            "IP_PLC": "127.0.0.1,192.168.2.169,192.168.2.170,192.168.2.171,192.168.2.172,192.168.2.173,192.168.2.174",
+            "SensorNames": "CC_PumpFlow, 2052,CC_PumpInletTemp, 2054,CC_PumpOutletTemp, 2056,CC_PumpSpeed, 2058,CC_PumpTemp, 2060,CD_CondTemp, 2062,CD_InSteamFlow, 2064,CD_Level, 2068,CD_OutCondFlow, 2070,CD_Press, 2072,CE_Pump1Flow, 2074,CE_Pump1Speed, 2076,CR_Position, 2078,FW_Pump1Flow, 2080,FW_Pump1Speed, 2082,GN_GenElecPow, 2084,PZ_Level, 2086,PZ_Press, 2088,RC1_PumpDiffPress, 2090,RC1_PumpFlow, 2092,RC1_PumpSpeed, 2094,RX_CladTemp, 2096,RX_InCoolTemp, 2098,RX_MeanCoolTemp, 2100,RX_OutCoolTemp, 2102,RX_ReactorPower, 2104,RX_ReactorPress, 2106,RX_TotalReac, 2108,SD_CtrlValvePos, 2110,SG1_InletTemp, 2112,SG1_InletWaterFlow, 2114,SG1_Level, 2116,SG1_OutletTemp, 2118,SG1_Press, 2120,SG1_SteamTemp, 2122,SG1_WaterTemp, 2124,SG2_InletTemp, 2126,SG2_InletWaterFlow, 2128,SG2_Level, 2130,SG2_OutletTemp, 2132,SG2_Press, 2134,SG2_SteamTemp, 2136,SG2_WaterTemp, 2138,TB_InSteamFlow, 2140,TB_InSteamPress, 2142,TB_OutSteamPress, 2144,TB_SpeedCtrlValvePos, 2146,CC_PumpOnOff, 2148,
+            CD_Level,2052,RX_ReactorPower,2054,
+            CD_Press,2052,
+            RC1_PumpFlow,2052,
+            SG1_Press,2052,SG2_Press,2054,
+            SG1_Level,2052,SG2_Level,2054,RX_ReactorPower,2056,
+            SG1_Press,2052,SG2_Press,2054,RX_ReactorPower,2056",
+            "ActuatorNames": "CE_Pump1SpeedCmd,2056,
+            CE_Pump1SpeedCmd,2056,CE_Pump2SpeedCmd,2058,CE_Pump3SpeedCmd,2060,CE_Pump1OnOffCmd,2062,CE_Pump2OnOffCmd,2064,CE_Pump3OnOffCmd,2066,
+            CC_PumpSpeedCmd,2054,CC_PumpOnOffCmd,205,
+            RC1_PumpSpeedCmd,2054,
+            SD_CtrlValveCmd,2056,SD_SafetyValveOnOffCmd,2058,
+            FW_Pump1SpeedCmd,2058,FW_Pump2SpeedCmd,2060,FW_Pump3SpeedCmd,2062,FW_Pump1OnOffCmd,2064,FW_Pump2OnOffCmd,2066,FW_Pump3OnOffCmd,2068,
+            TB_IsoValveCmd,2058",
+            "ScanTime": "0.1,0.1,0.1,0.1,0.1,0.1,0.1",
+            "TimeMem": "2048,2048,2048,2048,2048,2048,2048",
+            "MemFormat": "32_float,32_float,32_float,32_float,32_float,32_float,32_float",
+            "Endianess":"big,big,big,big,big,big,big,big,big,big,big,big,big,big",
+            "Port":"502,502,502,502,502,502,502",
+            "MultiPLC": "s=48,2,1,1,2,3,3;a=1,6,2,1,2,6,1"
+        }
+
+    ]
+}

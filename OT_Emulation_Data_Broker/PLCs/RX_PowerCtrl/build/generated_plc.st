@@ -1,0 +1,30 @@
+PROGRAM RX_PowerCTRL
+  VAR
+    TIME_IN AT %MD0 : REAL;
+    TIME_OUT AT %MD1 : REAL;
+    RX_Power AT %MD2 : REAL;
+    CTRL_RXPowerSetpoint AT %MD3 : REAL := 0.0;
+    MANIPIO_CONTROL AT %MD4 : REAL := 0.0;
+    KPI AT %MD5 : REAL := -100.0;
+    Ti AT %MD6 : REAL := 60.0;
+    SET_POINT AT %MD7 : REAL := 1.0;
+    INIT AT %MD8 : REAL := 90.0;
+    TIME_COMP AT %MD9 : REAL := 150.0;
+  END_VAR
+
+  TIME_OUT := TIME_IN;
+
+  IF TIME_OUT >= TIME_COMP THEN
+    TIME_COMP := TIME_OUT + 150.0;
+    CTRL_RXPowerSetpoint := CTRL_RXPowerSetpoint + 0.1;
+  END_IF;
+END_PROGRAM
+
+
+CONFIGURATION Config0
+
+  RESOURCE Res0 ON PLC
+    TASK task0(INTERVAL := T#100ms,PRIORITY := 0);
+    PROGRAM instance0 WITH task0 : RX_PowerCTRL;
+  END_RESOURCE
+END_CONFIGURATION

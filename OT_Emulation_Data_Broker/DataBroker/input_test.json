@@ -1,0 +1,21 @@
+{
+    "Simulator": [
+        {
+            "executableName": "ans_simdiag_04mar19_Rev12"
+        }
+    ],
+    "Endpoints": [
+        {
+            "Node": "CD_LV_Controller",
+            "IP_Host": "192.168.2.150",
+            "IP_PLC": "192.168.2.177",
+            "SensorNames": "RX_ReactorPower,2052",
+            "ActuatorNames": "CTRL_RXPowerSetpoint,2054",
+            "ScanTime": "0.1",
+            "TimeMem": "2048",
+            "MemFormat": "32_float",
+            "Endianess":"big,big",
+            "Port":"502"
+        }
+    ]
+}
